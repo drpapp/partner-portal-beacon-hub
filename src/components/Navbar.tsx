@@ -37,8 +37,14 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-3">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <div className="text-2xl font-bold text-waberer-primary mr-2">WABERER'S</div>
-              <div className="text-xl font-light text-gray-700">Partner Portal</div>
+              <div className="flex items-center">
+                <img 
+                  src="/lovable-uploads/c6b3fe17-944e-42ac-968c-764394ad116c.png" 
+                  alt="Waberer's Logo" 
+                  className="h-10 mr-2" 
+                />
+                <div className="text-xl font-light text-gray-700">Partner Portal</div>
+              </div>
             </Link>
           </div>
 

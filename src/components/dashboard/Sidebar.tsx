@@ -53,7 +53,11 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
           {/* Sidebar header */}
           <div className="flex items-center justify-between px-4 h-16 border-b border-gray-200">
             <Link to="/dashboard" className="flex items-center">
-              <div className="font-bold text-waberer-primary mr-1">WABERER'S</div>
+              <img 
+                src="/lovable-uploads/c6b3fe17-944e-42ac-968c-764394ad116c.png" 
+                alt="Waberer's Logo" 
+                className="h-6 mr-1" 
+              />
               <div className="text-sm font-light text-gray-700">Partner Portal</div>
             </Link>
             <button
@@ -75,7 +79,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                   className={cn(
                     "flex items-center px-3 py-2 text-sm font-medium rounded-md group transition-colors",
                     isActive
-                      ? "bg-waberer-light text-waberer-primary"
+                      ? "bg-waberer-accent text-waberer-primary"
                       : "text-gray-700 hover:bg-gray-50 hover:text-waberer-primary"
                   )}
                 >

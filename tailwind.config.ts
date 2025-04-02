@@ -64,11 +64,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				waberer: {
-					primary: '#008b1e',
-					secondary: '#00691a',
-					accent: '#9bef9b',
-					light: '#e3ffe3',
-					dark: '#003d0c',
+					primary: '#F7931A', // Orange primary
+					secondary: '#0EA5E9', // Blue secondary
+					accent: '#FEE9CC', // Light orange accent
+					light: '#E6F7FF', // Light blue
+					dark: '#001E3C', // Dark blue
 					gray: '#f5f5f5',
 					text: '#333333',
 				}
