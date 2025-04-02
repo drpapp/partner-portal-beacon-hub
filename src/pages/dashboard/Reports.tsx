@@ -7,7 +7,7 @@ import {
   Download,
   FileText,
   Leaf,
-  Tree,
+  Trees,
   Truck,
 } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
@@ -130,7 +130,7 @@ const Reports = () => {
 
               <div className="text-sm text-muted-foreground">
                 <div className="flex items-center">
-                  <Tree className="h-4 w-4 text-waberer-primary mr-2" />
+                  <Trees className="h-4 w-4 text-waberer-primary mr-2" />
                   Your CO2 savings are equivalent to planting approximately 
                   <span className="font-bold text-black mx-1">1,230 trees</span> this year.
                 </div>
@@ -420,7 +420,7 @@ const Reports = () => {
               <CardContent className="p-6">
                 <div className="flex flex-col md:flex-row items-center gap-6">
                   <div className="md:w-1/4 flex justify-center">
-                    <Tree className="h-24 w-24 text-waberer-primary" />
+                    <Trees className="h-24 w-24 text-waberer-primary" />
                   </div>
                   <div className="md:w-3/4 text-center md:text-left">
                     <h3 className="text-xl font-bold text-waberer-primary mb-2">
