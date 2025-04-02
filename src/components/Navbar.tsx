@@ -34,15 +34,19 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Desktop - Only show login button */}
-          <div className="hidden md:flex items-center">
-            <Button asChild variant="default" className="bg-waberer-primary hover:bg-waberer-secondary">
+          {/* Desktop navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            <Link to="/" className="nav-link active">Home</Link>
+            <Link to="/about" className="nav-link">About</Link>
+            <Link to="/services" className="nav-link">Services</Link>
+            <Link to="/contact" className="nav-link">Contact</Link>
+            <Button asChild variant="default" className="ml-4 bg-waberer-primary hover:bg-waberer-secondary">
               <Link to="/login" className="flex items-center">
                 <LogIn className="h-4 w-4 mr-2" />
                 Login
               </Link>
             </Button>
-          </div>
+          </nav>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -78,6 +82,16 @@ const Navbar = () => {
               Login
             </Link>
           </Button>
+          
+          {/* Mobile contact info */}
+          <div className="flex flex-col space-y-2 pt-2 border-t border-gray-100 text-sm text-gray-600">
+            <div className="flex items-center">
+              <span>+36 1 234 5678</span>
+            </div>
+            <div className="flex items-center">
+              <span>partner@wabereres.com</span>
+            </div>
+          </div>
         </div>
       </div>
     </header>
