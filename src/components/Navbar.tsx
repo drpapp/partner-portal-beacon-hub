@@ -39,7 +39,7 @@ const Navbar = () => {
             <Link to="/" className="flex items-center">
               <div className="flex items-center">
                 <img 
-                  src="/lovable-uploads/c6b3fe17-944e-42ac-968c-764394ad116c.png" 
+                  src="https://waberers.com/images/site/waberers_logo.svg" 
                   alt="Waberer's Logo" 
                   className="h-10 mr-2" 
                 />

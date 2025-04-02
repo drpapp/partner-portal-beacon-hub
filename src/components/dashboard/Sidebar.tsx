@@ -54,7 +54,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
           <div className="flex items-center justify-between px-4 h-16 border-b border-gray-200">
             <Link to="/dashboard" className="flex items-center">
               <img 
-                src="/lovable-uploads/c6b3fe17-944e-42ac-968c-764394ad116c.png" 
+                src="https://waberers.com/images/site/waberers_logo.svg" 
                 alt="Waberer's Logo" 
                 className="h-6 mr-1" 
               />
