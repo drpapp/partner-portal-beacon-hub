@@ -65,7 +65,7 @@ export default {
 				},
 				waberer: {
 					primary: '#F7931A', // Orange primary
-					secondary: '#0EA5E9', // Blue secondary
+					secondary: '#0A2954', // New dark blue from image
 					accent: '#FEE9CC', // Light orange accent
 					light: '#E6F7FF', // Light blue
 					dark: '#001E3C', // Dark blue
