@@ -6,8 +6,6 @@ import {
   Menu,
   LogIn,
   X,
-  Phone,
-  Mail,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -21,18 +19,6 @@ const Navbar = () => {
   return (
     <header className="w-full bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Top bar with contact info */}
-        <div className="hidden md:flex items-center justify-end py-2 space-x-4 text-sm text-gray-600">
-          <div className="flex items-center">
-            <Phone className="h-4 w-4 mr-1 text-waberer-primary" />
-            <span>+36 1 234 5678</span>
-          </div>
-          <div className="flex items-center">
-            <Mail className="h-4 w-4 mr-1 text-waberer-primary" />
-            <span>partner@wabereres.com</span>
-          </div>
-        </div>
-        
         {/* Main navigation */}
         <div className="flex items-center justify-between py-3">
           <div className="flex items-center">
@@ -48,19 +34,15 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Desktop navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="nav-link active">Home</Link>
-            <Link to="/about" className="nav-link">About</Link>
-            <Link to="/services" className="nav-link">Services</Link>
-            <Link to="/contact" className="nav-link">Contact</Link>
-            <Button asChild variant="default" className="ml-4 bg-waberer-primary hover:bg-waberer-secondary">
+          {/* Desktop - Only show login button */}
+          <div className="hidden md:flex items-center">
+            <Button asChild variant="default" className="bg-waberer-primary hover:bg-waberer-secondary">
               <Link to="/login" className="flex items-center">
                 <LogIn className="h-4 w-4 mr-2" />
                 Login
               </Link>
             </Button>
-          </nav>
+          </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -96,18 +78,6 @@ const Navbar = () => {
               Login
             </Link>
           </Button>
-          
-          {/* Mobile contact info */}
-          <div className="flex flex-col space-y-2 pt-2 border-t border-gray-100 text-sm text-gray-600">
-            <div className="flex items-center">
-              <Phone className="h-4 w-4 mr-2 text-waberer-primary" />
-              <span>+36 1 234 5678</span>
-            </div>
-            <div className="flex items-center">
-              <Mail className="h-4 w-4 mr-2 text-waberer-primary" />
-              <span>partner@wabereres.com</span>
-            </div>
-          </div>
         </div>
       </div>
     </header>
