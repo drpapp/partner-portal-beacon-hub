@@ -1,0 +1,500 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waberer's Partner Portal</title>
+  <link rel="stylesheet" href="home-export.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-icons@0.16.19/dist/umd/lucide.min.js">
+</head>
+<body>
+  <div class="min-h-screen flex flex-col">
+    <!-- Navbar -->
+    <header class="w-full bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Top bar with contact info -->
+        <div class="hidden md:flex items-center justify-end py-2 space-x-4 text-sm text-gray-600">
+          <div class="flex items-center">
+            <span class="icon-phone icon-small icon-primary mr-1"></span>
+            <span>+36 1 234 5678</span>
+          </div>
+          <div class="flex items-center">
+            <span class="icon-mail icon-small icon-primary mr-1"></span>
+            <span>partner@wabereres.com</span>
+          </div>
+        </div>
+        
+        <!-- Main navigation -->
+        <div class="flex items-center justify-between py-3">
+          <div class="flex items-center">
+            <a href="/" class="flex items-center">
+              <div class="flex items-center">
+                <img src="https://waberers.com/images/site/waberers_logo.svg" alt="Waberer's Logo" class="h-10 mr-2">
+                <div class="text-xl font-light text-gray-700">Partner Portal</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Desktop navigation - intentionally left empty as per request -->
+          
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button class="text-gray-500 hover:text-waberer-primary focus:outline-none">
+              <span class="icon-menu icon-medium"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile navigation -->
+      <div class="md:hidden bg-white w-full shadow-lg hidden">
+        <div class="container mx-auto px-4 flex flex-col space-y-4">
+          <a href="/" class="nav-link active py-2">Home</a>
+          <a href="/about" class="nav-link py-2">About</a>
+          <a href="/services" class="nav-link py-2">Services</a>
+          <a href="/contact" class="nav-link py-2">Contact</a>
+          <a href="/login" class="button button-primary w-full flex items-center justify-center">
+            <span class="icon-login icon-small mr-2"></span>
+            Login
+          </a>
+          
+          <!-- Mobile contact info -->
+          <div class="flex flex-col space-y-2 pt-2 border-t border-gray-100 text-sm text-gray-600">
+            <div class="flex items-center">
+              <span class="icon-phone icon-small icon-primary mr-2"></span>
+              <span>+36 1 234 5678</span>
+            </div>
+            <div class="flex items-center">
+              <span class="icon-mail icon-small icon-primary mr-2"></span>
+              <span>partner@wabereres.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-1">
+      <!-- Hero Section -->
+      <div class="hero-gradient pt-28 pb-16 md:pt-32 md:pb-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 max-w-2xl">
+              <div class="inline-block bg-waberer-light text-waberer-primary font-medium px-4 py-1.5 rounded-full text-sm">
+                Hungary's Largest 3PL Provider
+              </div>
+              <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                Your Logistics <span class="text-waberer-primary">Partner Portal</span>
+              </h1>
+              <p class="text-xl text-gray-600">
+                Access real-time data, track sustainability metrics, and stay updated with our partner ecosystem - all in one secure platform.
+              </p>
+              <div class="flex flex-wrap gap-4 pt-2">
+                <a href="/login" class="button button-primary button-lg">Partner Login</a>
+                <a href="/contact" class="button button-outline button-lg">Request Access</a>
+              </div>
+              
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6 pt-6">
+                <div class="flex items-center">
+                  <span class="icon-truck icon-primary icon-small mr-2"></span>
+                  <span class="text-gray-700 font-medium">5000+ fleet</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="icon-bar-chart icon-primary icon-small mr-2"></span>
+                  <span class="text-gray-700 font-medium">Real-time data</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="icon-users icon-primary icon-small mr-2"></span>
+                  <span class="text-gray-700 font-medium">1000+ partners</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="icon-shield-check icon-primary icon-small mr-2"></span>
+                  <span class="text-gray-700 font-medium">Secure access</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="icon-trending-up icon-primary icon-small mr-2"></span>
+                  <span class="text-gray-700 font-medium">Growth insights</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="icon-leaf icon-primary icon-small mr-2"></span>
+                  <span class="text-gray-700 font-medium">Eco-friendly</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="relative h-full flex justify-center">
+              <img 
+                src="/placeholder.svg" 
+                alt="Waberer's Partner Portal Dashboard" 
+                class="rounded-lg shadow-2xl max-w-full h-auto animate-float z-10"
+              >
+              <div class="absolute -bottom-5 -right-5 w-72 h-72 bg-waberer-light rounded-full mix-blend-multiply filter blur-3xl opacity-60"></div>
+              <div class="absolute -top-5 -left-5 w-72 h-72 bg-waberer-accent rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features Section -->
+      <section class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+              Everything You Need in One Platform
+            </h2>
+            <p class="text-xl text-gray-600">
+              Our partner portal provides all the tools and insights you need to optimize your logistics operations and make data-driven decisions.
+            </p>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="feature-card">
+              <div class="mb-4 text-waberer-primary">
+                <span class="icon-bar-chart icon-large"></span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-900">Data Analytics</h3>
+              <p class="text-gray-600">Access comprehensive analytics dashboards showing your logistics performance metrics in real-time.</p>
+            </div>
+            
+            <div class="feature-card">
+              <div class="mb-4 text-waberer-primary">
+                <span class="icon-newspaper icon-large"></span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-900">News & Updates</h3>
+              <p class="text-gray-600">Stay updated with the latest company news, service updates, and industry trends.</p>
+            </div>
+            
+            <div class="feature-card">
+              <div class="mb-4 text-waberer-primary">
+                <span class="icon-leaf icon-large"></span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-900">Green Reporting</h3>
+              <p class="text-gray-600">Monitor sustainability metrics and see the environmental impact of your logistics operations.</p>
+            </div>
+            
+            <div class="feature-card">
+              <div class="mb-4 text-waberer-primary">
+                <span class="icon-trending-up icon-large"></span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-900">Performance Insights</h3>
+              <p class="text-gray-600">Track key performance indicators and identify opportunities for optimization and growth.</p>
+            </div>
+            
+            <div class="feature-card">
+              <div class="mb-4 text-waberer-primary">
+                <span class="icon-truck icon-large"></span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-900">Shipment Tracking</h3>
+              <p class="text-gray-600">Track your shipments in real-time with detailed status updates and location information.</p>
+            </div>
+            
+            <div class="feature-card">
+              <div class="mb-4 text-waberer-primary">
+                <span class="icon-calendar icon-large"></span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-900">Event Calendar</h3>
+              <p class="text-gray-600">Stay on top of important deadlines, industry events, and partnership meetings.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="stats-card">
+              <div class="w-16 h-16 flex items-center justify-center rounded-full mb-4 bg-waberer-light">
+                <span class="icon-truck icon-primary icon-large"></span>
+              </div>
+              <div class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+                5000+
+              </div>
+              <div class="text-gray-600">Vehicles in fleet</div>
+            </div>
+            
+            <div class="stats-card">
+              <div class="w-16 h-16 flex items-center justify-center rounded-full mb-4 bg-waberer-light">
+                <span class="icon-leaf icon-primary icon-large"></span>
+              </div>
+              <div class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+                24,650
+              </div>
+              <div class="text-gray-600">Tons of CO2 saved</div>
+            </div>
+            
+            <div class="stats-card">
+              <div class="w-16 h-16 flex items-center justify-center rounded-full mb-4 bg-waberer-light">
+                <span class="icon-users icon-primary icon-large"></span>
+              </div>
+              <div class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+                1,200+
+              </div>
+              <div class="text-gray-600">Partners worldwide</div>
+            </div>
+            
+            <div class="stats-card">
+              <div class="w-16 h-16 flex items-center justify-center rounded-full mb-4 bg-waberer-light">
+                <span class="icon-trending-up icon-primary icon-large"></span>
+              </div>
+              <div class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+                98%
+              </div>
+              <div class="text-gray-600">On-time delivery rate</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PowerBI Section -->
+      <section class="py-16 md:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+              Interactive <span class="text-waberer-primary">Data Reports</span>
+            </h2>
+            <p class="text-xl text-gray-600">
+              Explore our interactive Power BI reports for real-time insights into your logistics operations and sustainability metrics.
+            </p>
+          </div>
+          
+          <div class="tabs">
+            <div class="tabs-list bg-gray-100">
+              <button class="tab-trigger active">Performance Metrics</button>
+              <button class="tab-trigger">Sustainability Data</button>
+            </div>
+            
+            <div class="tab-content active">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Logistics Performance Dashboard</h3>
+                  <p class="card-description">Track on-time delivery rates, efficiency metrics, and cost analytics.</p>
+                </div>
+                <div class="card-content p-0 overflow-hidden rounded-b-lg">
+                  <div class="aspect-video bg-gray-100 w-full flex items-center justify-center border-t">
+                    <div class="text-center p-8">
+                      <div class="mx-auto w-16 h-16 mb-4 rounded-full bg-waberer-light flex items-center justify-center">
+                        <div class="text-waberer-primary text-2xl font-bold">BI</div>
+                      </div>
+                      <h3 class="text-lg font-medium text-gray-900 mb-2">PowerBI Report Placeholder</h3>
+                      <p class="text-gray-500 max-w-md mx-auto">
+                        Interactive Power BI report will be embedded here after connection to your data sources.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-content">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Environmental Impact Dashboard</h3>
+                  <p class="card-description">Monitor CO2 emissions savings, fuel efficiency, and environmental metrics.</p>
+                </div>
+                <div class="card-content p-0 overflow-hidden rounded-b-lg">
+                  <div class="aspect-video bg-gray-100 w-full flex items-center justify-center border-t">
+                    <div class="text-center p-8">
+                      <div class="mx-auto w-16 h-16 mb-4 rounded-full bg-waberer-light flex items-center justify-center">
+                        <div class="text-waberer-primary text-2xl font-bold">BI</div>
+                      </div>
+                      <h3 class="text-lg font-medium text-gray-900 mb-2">PowerBI Report Placeholder</h3>
+                      <p class="text-gray-500 max-w-md mx-auto">
+                        Interactive Power BI report will be embedded here after connection to your data sources.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="py-16 md:py-24 bg-waberer-secondary">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">
+              Ready to Access Your Partner Portal?
+            </h2>
+            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+              Login to your account to access real-time data, reports, and stay updated with the latest news and events.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="/login" class="button button-white flex items-center justify-center">
+                <span class="icon-login icon-small mr-2"></span>
+                Partner Login
+              </a>
+              <a href="/contact" class="button button-outline-white flex items-center">
+                Request Access
+                <span class="icon-move-right icon-small ml-2"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Company info -->
+          <div>
+            <h3 class="text-xl font-bold mb-4 flex items-center">
+              <span class="text-waberer-primary mr-1">WABERER'S</span> Partner Portal
+            </h3>
+            <p class="text-gray-400 mb-4">
+              Hungary's leading logistics provider with a comprehensive partner ecosystem.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-waberer-primary transition-colors">
+                <span class="icon-facebook icon-small"></span>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-waberer-primary transition-colors">
+                <span class="icon-twitter icon-small"></span>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-waberer-primary transition-colors">
+                <span class="icon-linkedin icon-small"></span>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-waberer-primary transition-colors">
+                <span class="icon-instagram icon-small"></span>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Quick links -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="/" class="text-gray-400 hover:text-white transition-colors flex items-center">
+                  <span class="icon-chevron-right icon-small mr-1 text-waberer-primary"></span>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="/about" class="text-gray-400 hover:text-white transition-colors flex items-center">
+                  <span class="icon-chevron-right icon-small mr-1 text-waberer-primary"></span>
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="/services" class="text-gray-400 hover:text-white transition-colors flex items-center">
+                  <span class="icon-chevron-right icon-small mr-1 text-waberer-primary"></span>
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="/contact" class="text-gray-400 hover:text-white transition-colors flex items-center">
+                  <span class="icon-chevron-right icon-small mr-1 text-waberer-primary"></span>
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Services -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Partner Services</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="/dashboard" class="text-gray-400 hover:text-white transition-colors flex items-center">
+                  <span class="icon-chevron-right icon-small mr-1 text-waberer-primary"></span>
+                  Dashboard
+                </a>
+              </li>
+              <li>
+                <a href="/dashboard/news" class="text-gray-400 hover:text-white transition-colors flex items-center">
+                  <span class="icon-chevron-right icon-small mr-1 text-waberer-primary"></span>
+                  News & Updates
+                </a>
+              </li>
+              <li>
+                <a href="/dashboard/reports" class="text-gray-400 hover:text-white transition-colors flex items-center">
+                  <span class="icon-chevron-right icon-small mr-1 text-waberer-primary"></span>
+                  Green Reports
+                </a>
+              </li>
+              <li>
+                <a href="/login" class="text-gray-400 hover:text-white transition-colors flex items-center">
+                  <span class="icon-chevron-right icon-small mr-1 text-waberer-primary"></span>
+                  Partner Login
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Contact -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+            <address class="not-italic text-gray-400 space-y-2">
+              <p>1239 Budapest, Nagykőrösi út 351.</p>
+              <p>Hungary</p>
+              <p>Phone: +36 1 234 5678</p>
+              <p>Email: partner@wabereres.com</p>
+            </address>
+          </div>
+        </div>
+        
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+          <p>&copy; 2025 Waberer's International Nyrt. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Back to top button -->
+    <button class="fixed bottom-8 right-8 rounded-full p-3 bg-waberer-primary text-white shadow-lg hover:bg-waberer-secondary focus:outline-none hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 15l-6-6-6 6" />
+      </svg>
+    </button>
+  </div>
+
+  <script>
+    // Simple JavaScript to handle tabs
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabTriggers = document.querySelectorAll('.tab-trigger');
+      const tabContents = document.querySelectorAll('.tab-content');
+      
+      tabTriggers.forEach((trigger, index) => {
+        trigger.addEventListener('click', () => {
+          // Remove active class from all triggers and contents
+          tabTriggers.forEach(t => t.classList.remove('active'));
+          tabContents.forEach(c => c.classList.remove('active'));
+          
+          // Add active class to clicked trigger and corresponding content
+          trigger.classList.add('active');
+          tabContents[index].classList.add('active');
+        });
+      });
+      
+      // Back to top button functionality
+      const backToTopButton = document.querySelector('button.fixed');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+          backToTopButton.classList.remove('hidden');
+        } else {
+          backToTopButton.classList.add('hidden');
+        }
+      });
+      
+      backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+      
+      // Mobile menu functionality
+      const menuButton = document.querySelector('.md\\:hidden button');
+      const mobileMenu = document.querySelector('.md\\:hidden.bg-white.w-full');
+      
+      menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
